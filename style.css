@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+      body{
+        background-image: url(Background.jpg);
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      *{
+            margin: 0px;
+            padding:0px;
+            box-sizing: border-box;
+            font-family:'Noto Sans',sans-serif ;
+            font-family:'Poppins',sans-serif;
+        }
+
+/*Heading*/
+h1{
+  text-align: center;
+  position: relative;
+  font-size: 3em;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+h1 span{
+  color: #555;
+  transition: 0.25s;
+}
+h1:hover span{
+  color: #0f0;
+  text-shadow: 0 0 5px #0f0,
+               0 0 15px #0f0,
+               0 0 30px #0f0;
+}
+/*Heading End*/
+
+
+/*Tag*/
+.content{
+  position: relative;
+}
+.content h2{
+  position: absolute;
+  transform: translate(-50%,-50%);
+  font-size: 3em;
+}
+.content h2:nth-child(1){
+  color: transparent;
+  -webkit-text-stroke: 2px #03a9f4;
+}
+.content h2:nth-child(2){
+  color: 03a9f4;
+  animation: animate 4s ease-in-out infinite;
+}
+@keyframes animate{
+  0%,100%{
+    clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+  }
+  50%{
+    clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+  }
+}
+/*Tag End*/
+
+
+/*Nav*/
+nav {
+  background-color: #333;
+  padding:12px 3px;
+  display: flex;
+  justify-content: space-between;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  display: inline;
+  margin-right: 20px;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover {
+  color: #ff9900;
+}
+/*Nav End*/ 
+
+/*Logo*/
+      .logo{
+          display: flex;
+          align-items: center;
+      }
+      .img-logo{
+        padding-top: 15px;
+        padding-left: 10px;
+        height: 45px;
+        width: 43px;
+      }  
+      .logo-shape {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        background-color: #ffffff;
+      }
+/*Logo End*/
+
+       ul{
+        display:flex;
+        margin:0 25px;
+        align-items: center;
+       }
+       ul>li{
+        list-style:none;
+        margin:0 13px;
+        cursor: pointer;
+       }
+       ul>li:hover{
+        color:rgb(0, 17, 255);
+       }
+       table,td,tr{
+        border:2px solid rgb(44, 44, 44);
+        border-collapse:collapse;
+        padding: 5px 13px;
+       }
+       .container{
+        max-width: 80vw;
+        margin: 23px auto;
+       }
+
+       h1,h2,h3{
+        margin: 23px 0;
+       }
+       .btn{
+        padding: 8px 17px;
+        background-color: #58cc02;
+        box-shadow: 0 5px 0 #58a700;
+        color: white;
+        font-weight: 900;
+        border: 0px solid rgb(0, 0, 0);
+        border-radius: 20px;
+        margin: 25px 0;
+        cursor:pointer;
+       }
+       .btn:active{
+        box-shadow: none;
+        transform: translateY(5px);
+       }
+
+       .btnsm{
+        font-family: "Roboto", sans-serif;
+        font-size: 10px;
+        font-weight: bolder;
+        background: #58cc02;
+        width: 16p0x;
+        padding: 10px;
+        text-align:center;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow:#58a700;
+       }
+       .btnsm:hover, .btnsm:focus, .btnsm:active{
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        -webkit-transform: scale(1.1);
+        tranform: scale(1.1);
+       }
+
+       img{
+        cursor: pointer;
+        position: relative;
+        bottom: 7px;
+        width: 17px;
+        height: 13px;
+       }
+
+      .alert{
+        display: none;
+      }
+      #alert{
+        display: none;
+      }

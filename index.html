@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret-Everything Secured</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Container -->
+    <div class="container">
+<!-- Tag -->
+<div class="content">
+  <h2>Secure</h2>
+  <h2>Secure</h2>
+</div>
+<!-- Heading -->
+<h1 class="text">Password Manager</h1>
+<!-- Table -->
+        <h3>Saved Passwords:<span id="alert"> (Selected info has been copied.)</span></h3>
+        <table class="table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Website</th>
+                <th>UserName</th>
+                <th>Password</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>CWM</td>
+                <td>aishikim06@gmail.com</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>@mdo</td>
+              </tr>
+            </tbody>
+          </table>
+        <h3>Add Password:</h3>
+<!-- Form -->
+        <form action="/submit" method="post">
+            <!-- Text input for username -->
+            <label for="username">Username :</label>
+            <input type="text" id="username" name="username" required>
+            <br><br>
+            <!-- Text input for website -->
+            <label for="website">Website :</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="website" name="website" required>
+            <br><br>
+            <!-- Password input -->
+            <label for="password">Password :</label>&nbsp;
+            <input type="password" id="password" name="password" required>
+            <br>
+            <!-- Submit button -->
+            <button class="btn" type="submit">Submit</button>
+          </form>
+    </div>
+<!-- Scripts -->
+<!-- Heading Script -->
+<script>
+  let text=document.querySelector('.text');
+  text.innerHTML = text.innerText.split('').map((letters, i)=> `<span style="transition-delay:${i * 40}ms;filter
+  :hue-rotate(${i * 30}deg)">${letters}</span>`).join('');
+</script>
+<!-- Heading Script end -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
